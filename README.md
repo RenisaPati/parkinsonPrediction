@@ -5,15 +5,15 @@ This project is an attempt to create a precise predictor for predicting the like
 
 Workflow
 I shall be proceeding in the following way with this project:
-1.Data cleansing: Data shall be processed for detecting and correcting corrupt or inaccurate records if any!
-2.Manual feature reduction: Before even loading the data I shall try reducing the features. Such as eliminating IDs, Names, Sequence Numbers etc.
-3.Data loading: Data shall then be converted from CSV to Panda’s DF format for carrying out further operations. This can be done using pythons Pandas library.
-4.Train-Test split: The data shall then be split into an 80:20 ratio for carrying out ML classification on the training set.
-5.Classifier show down: I shall use Python’s SciKit-Learn library for running all the classifiers in a loop  and figuring out the score for the most accurate classifier.
-6.Feature reduction: Following the showdown the features shall be reduced using various techniques such as PCA to enhance the accuracy of the model.
-7.Selecting best classifier: I shall then test the fit with reduced dimensionality with the classifiers which seemed to perform well during initial classifier showdown.
-8.Fine tune: Finally the classifier parameters shall be tuned to increase classifier accuracy.
-9.Prepare final model: This classifier shall then be used to prepare the final model.
+1. Data cleansing: Data shall be processed for detecting and correcting corrupt or inaccurate records if any!
+2. Manual feature reduction: Before even loading the data I shall try reducing the features. Such as eliminating IDs, Names, Sequence Numbers etc.
+3. Data loading: Data shall then be converted from CSV to Panda’s DF format for carrying out further operations. This can be done using pythons Pandas library.
+4. Train-Test split: The data shall then be split into an 80:20 ratio for carrying out ML classification on the training set.
+5. Classifier show down: I shall use Python’s SciKit-Learn library for running all the classifiers in a loop  and figuring out the score for the most accurate classifier.
+6. Feature reduction: Following the showdown the features shall be reduced using various techniques such as PCA to enhance the accuracy of the model.
+7. Selecting best classifier: I shall then test the fit with reduced dimensionality with the classifiers which seemed to perform well during initial classifier showdown.
+8. Fine tune: Finally the classifier parameters shall be tuned to increase classifier accuracy.
+9. Prepare final model: This classifier shall then be used to prepare the final model.
 
 It was observed that Support Vector Classifier outperformed all the other classifiers by a 5% margin. After tuning the number of PCA component between 4-15 and performing exhaustive gridSVC an accuracy of 90% was obtained with given parameters.
 
